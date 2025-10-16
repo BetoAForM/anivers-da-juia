@@ -208,11 +208,11 @@
     function onPlayerStateChange(event) {
       if (event.data === YT.PlayerState.PLAYING) {
         isPlaying = true;
-        playPauseBtn.textContent = '⏸';
+        playPauseBtn.textContent = '❚❚';
         updateProgress();
       } else if (event.data === YT.PlayerState.PAUSED) {
         isPlaying = false;
-        playPauseBtn.textContent = '▶️';
+        playPauseBtn.textContent = '▶';
       }
     }
 
@@ -251,4 +251,5 @@
   </script>
 </body>
 </html>
+
 
