@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💕 Feliz Aniversário Julinhaaa 💕</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #000033, #003366);
+      text-align: center;
+      padding: 20px;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    /* ==== PLAYER DE MÚSICA ==== */
+    .music-player {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #1b1b3a, #2a4a8c);
+      border-radius: 16px;
+      padding: 12px 20px;
+      max-width: 450px;
+      margin: 10px auto 25px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      color: #fff;
+    }
+
+    .music-player img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+    }
+
+    .music-info {
+      flex: 1;
+      text-align: left;
+      margin-left: 10px;
+    }
+
+    .music-info h4 {
+      margin: 0;
+      font-size: 0.95em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .music-info p {
+      margin: 2px 0 0;
+      font-size: 0.8em;
+      opacity: 0.8;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .controls button {
+      background: #ffffff33;
+      border: none;
+      color: white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .controls button:hover {
+      background: #ffffff55;
+    }
+
+    .progress {
+      width: 100%;
+      height: 4px;
+      background: #ffffff33;
+      border-radius: 2px;
+      margin-top: 6px;
+      position: relative;
+    }
+
+    .progress-bar {
+      height: 4px;
+      background: #a0c0ff;
+      width: 0%;
+      border-radius: 2px;
+    }
+
+    /* ==== CONTEÚDO ==== */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .text {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      color: #e0e0e0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      color: #ff69b4;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #a0c0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==== PLAYER FIXO NO TOPO ==== -->
+  <div class="music-player">
+    <img src="https://i.ytimg.com/vi/w09iEhS-Aok/hqdefault.jpg" alt="Capa da música">
+    <div class="music-info">
+      <h4>Memories of You - Persona 3</h4>
+      <p>Lello</p>
+      <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="playPauseBtn">⏸</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>💕✨ Feliz aniversário Julinhaaa ✨💕</h1>
+
+    <div class="text">
+      <p>Que Deus te abençoe muuuuuuuuito, que você tenha muita saúde (essêncial para o enredo), que você seja muito feliz e que continue sempre firme para o que der e vier.</p>
+      <p>Acho que já é meio de se esperar, mas você é muito importante pra mim e para todos, sua amizade é algo incrível, e não dá pra imaginar a vida, não só na escola, mas para o que der vier sem você, pois você é alguém incrível e que faz muita falta.</p>
+      <p>Por meio dessa mensagem, quero dizer que você é uma pessoa muito valiosa, e que considero muito você e nossa amizade, espero e desejo que ela dure pra vida toda e que eu possa estar ao seu lado para o que der e vier e que nossa amizade perdure por toda a vida. Dito isso, parabéns Julinha :)</p>
+      <p>(Liberado chorar já)</p>
+    </div>
+
+    <img src="https://cdn.discordapp.com/attachments/1312199488647069859/1428187389376991272/Picsart_25-10-15_22-06-28-472.jpg?ex=68f196a8&is=68f04528&hm=fb1f5703c816dc68b9acc74a424788078660d66bf7932742fc43e657b154ad2e&" alt="Imagem de aniversário para Julinha">
+
+    <div class="music">
+      <h2>Música de fundo:</h2>
+      <iframe id="youtubePlayer" width="560" height="315"
+        src="https://www.youtube.com/embed/w09iEhS-Aok?autoplay=1&enablejsapi=1&loop=1&playlist=w09iEhS-Aok&mute=1"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+      <p>*Se o som não sair, clique em qualquer lugar da tela pra ativar 🎵</p>
+    </div>
+  </div>
+
+  <!-- ==== SCRIPT ==== -->
+  <script>
+    let player;
+    let isPlaying = true;
+    let hasUnmuted = false;
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const progressBar = document.getElementById('progressBar');
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('youtubePlayer', {
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    function onPlayerReady() {
+      // começa mutado pra evitar bloqueio
+      player.mute();
+      player.playVideo();
+
+      // tenta autoplay com som se o navegador permitir
+      setTimeout(() => {
+        player.unMute();
+        player.setVolume(100);
+      }, 1000);
+    }
+
+    function onPlayerStateChange(event) {
+      if (event.data === YT.PlayerState.PLAYING) {
+        isPlaying = true;
+        playPauseBtn.textContent = '⏸';
+        updateProgress();
+      } else if (event.data === YT.PlayerState.PAUSED) {
+        isPlaying = false;
+        playPauseBtn.textContent = '▶️';
+      }
+    }
+
+    function updateProgress() {
+      if (player && isPlaying) {
+        const duration = player.getDuration();
+        const current = player.getCurrentTime();
+        const percent = (current / duration) * 100;
+        progressBar.style.width = percent + '%';
+        requestAnimationFrame(updateProgress);
+      }
+    }
+
+    playPauseBtn.addEventListener('click', () => {
+      if (isPlaying) player.pauseVideo();
+      else player.playVideo();
+
+      if (!hasUnmuted) {
+        player.unMute();
+        hasUnmuted = true;
+      }
+    });
+
+    document.addEventListener('click', () => {
+      if (!hasUnmuted && player) {
+        player.unMute();
+        player.setVolume(100);
+        hasUnmuted = true;
+      }
+    });
+
+    // carrega API do YouTube
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.body.appendChild(tag);
+  </script>
+</body>
+</html>
